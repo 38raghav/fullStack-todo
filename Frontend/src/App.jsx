@@ -1,8 +1,10 @@
+import  Todo  from './Todo.jsx'
 function App() {
   return (
     <>
-      <h1>Hii</h1>
+      <Todo/>
     </>
   )
 }
+
 export default App;
