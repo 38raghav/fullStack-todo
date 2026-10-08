@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import "./Todo.css"
 export default function Todo() {
   const [task,setTask]=useState("");
   const [todo, setTodo] = useState([]);
@@ -34,22 +34,25 @@ export default function Todo() {
 };
   return (
     <>
+      <div className="todo-container">
       <h1>Todo List</h1>
+      <div className="input-box">
       <input type="text"
        placeholder="Enter your task"
       value={task} 
       onChange={(e)=>setTask(e.target.value)}/>&nbsp;&nbsp;
-      <button onClick={addTodo}>Add</button>
+      <button className="add-btn" onClick={addTodo}>Add</button>
+      </div>
 
       <ul>
         {todo.map((item,index)=>(
           <li key={index}>{item} &nbsp;&nbsp;
-          <button onClick={()=>editTodo(index)}>Edit</button>&nbsp;&nbsp;
-          <button onClick={()=>deleteTodo(index)}>Delete</button>
+          <div> <button className="edit-btn" onClick={()=>editTodo(index)}>Edit</button>&nbsp;&nbsp;
+          <button className="delete-btn" onClick={()=>deleteTodo(index)}>Delete</button></div>
         </li>
        ))}
         </ul>
-
+      </div>
     </>
   );
 }

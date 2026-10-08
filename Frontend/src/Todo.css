@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+.todo-container {
+  width: 500px;
+  margin: 80px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.todo-container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+.input-box {
+  display: flex;
+  gap: 10px;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.input-box input:focus {
+  border-color: #555;
+}
+
+button {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.add-btn {
+  background: #222;
+  color: white;
+}
+
+.add-btn:hover {
+  background: #444;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 25px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 10px;
+  background: #f1f1f1;
+  border-radius: 7px;
+}
+
+li span {
+  font-size: 16px;
+  color: #333;
+}
+
+.edit-btn {
+  background: #ddd;
+  color: #222;
+  margin-right: 6px;
+}
+
+.edit-btn:hover {
+  background: #bbb;
+}
+
+.delete-btn {
+  background: #222;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #555;
+}
