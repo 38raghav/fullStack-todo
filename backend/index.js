@@ -7,8 +7,11 @@ app.use(cors());
 app.use(express.json());
 
 
-app.get("/",(req,res)=>{
-    res.send("<h1>Hy I am home page</h1>");
+app.get("/todo",(req,res)=>{
+    res.json([
+        { task1 : "Play cricket" },
+        { task2 : "Play xyz" }
+    ]);
 })
 
 
